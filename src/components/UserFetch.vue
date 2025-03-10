@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
-import { Artikal } from './models';
+import type { Artikal } from './models';
 const artikli = ref<Artikal[]>([]);
 const apiUrl = 'http://localhost:3000/users'; // Change this to match your backend route
 

@@ -8,6 +8,6 @@
      <!-- Existing button to go to Artikli page -->
      <q-btn label="Go to Update" to="/update-product" color="red" />
      <!-- Existing button to go to Artikli page -->
-     <q-btn label="Go to NEW Update" to="/fetch-update-product" color="black" />
+     <q-btn label="Go to Update" to="/fetch-update-product" color="red" />
   </q-page>
 </template>

@@ -20,7 +20,7 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/HomePage.vue'),
       },
       {
-        path: '2232',
+        path: 'artikli',
         component: UserFetch,
       },
       {
@@ -32,7 +32,7 @@ const routes: RouteRecordRaw[] = [
         component: UpdateProduct,
       },
       {
-        path: 'artikli',
+        path: 'fetch-update-product',
         component: FetchUpdate,
       },
     ],

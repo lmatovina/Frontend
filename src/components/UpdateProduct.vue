@@ -46,6 +46,7 @@ const formData = ref({
 onMounted(async () => {
   const productId = route.params.id;
   try {
+    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
     const response = await axios.get(`http://localhost:3000/artikli/${productId}`);
     formData.value = response.data;  // Pre-populate form with product data
   } catch (error) {
@@ -71,7 +72,7 @@ const submitForm = async () => {
 // Close the success dialog
 const closeDialog = () => {
   dialogVisible.value = false;
-  router.push('/artikli'); // Redirect to the product list page after successful update
+  void router.push('/artikli'); // Redirect to the product list page after successful update
 };
 </script>
 
